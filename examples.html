@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="background_styles.css">
     <link rel="stylesheet" href="styles_basic.css">
     <script src="script.js " defer></script>
-    <title>Home</title>
+
+    <title>Examples</title>
 </head>
 
 <body>
     <nav class="navbar ">
-        <div class="brand-title ">Home</div>
+        <div class="brand-title ">Examples</div>
         <a href="# " class="toggle-button ">
             <span class="bar "></span>
             <span class="bar "></span>
@@ -27,10 +28,30 @@
                 <li>
                     <a href="examples.html">Examples</a>
                 </li>
-
             </ul>
         </div>
     </nav>
+    <script>
+        function loadURl(f) {
+            var index = f.selectedIndex;
+            var URl = f.options[index].value;
+            parent.location.href = URl;
+        }
 
+        function writeOption(opt) {
+            document.write("<OPTION VALUE='" + opt[0] + "'>" + opt[1] + "</OPTION>");
+        }
+    </script>
+    <form name="form" align="center">
+        <select name="tutorial" onChange=loadURl(tutorial)>
+        <script language="JavaScript" src="urls.js"></script>
+        
+    </select>
+        <select name="demo" onChange=loadURl(demo)>
+            <script language="JavaScript" src="demos.js"></script>
+        </select>
+    </form>
+
+</body>
 
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js " defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Code</title>
+</head>
+
+<body>
+    <nav class="navbar ">
+        <div class="brand-title ">Code</div>
+        <a href="# " class="toggle-button ">
+            <span class="bar "></span>
+            <span class="bar "></span>
+            <span class="bar "></span>
+        </a>
+        <div class="navbar-links ">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="code.html">Code</a>
+                </li>
+                <li>
+                    <a href="examples.html">Examples</a>
+                </li>
+
+            </ul>
+        </div>
+
+        </ul>
+        </div>
+    </nav>
+    <div class="code-area">
+        <textarea id="htmlCode" placeholder="HTML Code" oninput="showPreview()"></textarea>
+        <textarea id="cssCode" placeholder="CSS Code" oninput="showPreview()"></textarea>
+        <textarea id="jsCode" placeholder="JavaScript Code" oninput="showPreview()"></textarea>
+    </div>
+    <div class="preview-area">
+        <iframe id="preview-window"></iframe>
+    </div>
+
+</html>

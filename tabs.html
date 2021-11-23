@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="styles_basic.css">
+    <script src="script.js " defer></script>
+    <title>How to make tabs</title>
+</head>
+
+<body>
+    <nav class="navbar ">
+        <div class="brand-title ">How to make tabs</div>
+        <a href="# " class="toggle-button ">
+            <span class="bar "></span>
+            <span class="bar "></span>
+            <span class="bar "></span>
+        </a>
+        <div class="navbar-links ">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="code.html">Code</a>
+                </li>
+                <li>
+                    <a href="examples.html">Examples</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <h1>how to make html tabs</h1>
+    <h2>youtube video and source</h2>
+    <iframe id="tabs" src="https://youtube.com/embed/oLqdy95LZSw"></iframe>
+    <br>
+    <h2>text directions</h2>
+    <br>
+    <p>what's going on my name is jay and in this video i want to show you how you can create tabs with only html and css you do not need javascript for this okay some people think that it's not possible but it is you only need some html and the magic happens
+        in the css so here you can see what i did and it worked perfectly you can see how it hides and show the actual tab um so let's go ahead here in my code as you can see my html is kind of empty i added some on my css which is totally empty right
+        now and some google fonts that way it looks a little bit better all right so i'm going to close this and this is our page is blank there's nothing right now so let let's go and code some html so the first thing i'm going to create a diff with
+        a class of let's say my tabs this can be whatever you want it doesn't have to be my tabs or tabs whatever you want okay so this is like my container for all my tabs and now i'm going to start cutting creating all those tabs so here's the thing
+        we're gonna use input and it's gonna be the radio input so you're gonna put type radio this is what's gonna do our trick of selecting all right so the id is going to be equal to and here you can put an id for that specific tab so i'm going to
+        call it tab free because it's the tab for the free version or whatever i'm showing there and the name is very important this is the name for your all of your tabs because remember tabs are like a group and you can select only one all right so
+        let's call it my taps you can call it whatever you want um and then when your tab is selected it's gonna do this checked equals two checked so this happens when you click on the radio it's big it becomes selected but it's actually checked that's
+        that's how it is okay checked so the first one i it to be checked so we're going to keep that now we need a label so let's go ahead and do label and this label is for what is going to be for this for the tab free right and make sure you add that
+        um for that's why the id is very important make sure that they're both connected the input with the label all right and now we can say i don't know this one is the free one that's our label and now here um this is the content so we can do just
+        a class with a a div with a class of tab and we can add a bunch of um like paragraph i have some paragraph here i'm just i'm just going to copy and paste this there you go um and let's add um an h2 here it's going to be free all right let's say
+        that and let's see how it looks and you can see we have the radio is checked and then we have the content the free and then all this paragraph so i'm gonna do the same thing again so all i'm gonna do is just copy this whole thing and paste it
+        down here and we need to change some stuff so make sure this one let's say the id is this one is silver my tapped name stays the same this one is not gonna be checked i only want the first one to be checked when you go to the page all right i'm
+        gonna change this to silver the h2 to silver um and maybe remove a little bit of this tube just to make sure it's a little bit different all right i think everything looks actually no tab 4 is gonna be for tap silver there you go so the label
+        now is connected to this input okay save that all right so i'm going to click this and you can see when you click now you can click only one you cannot click both and when you click the label it's actually selecting the whole thing all right same
+        thing again let's copy and paste um this one is going to be the gold tap gold let's change the label to gold all right and let's just copy and paste just a little bit more that way it's different and the names stay my tabs all right save let's
+        see if it works all right perfect so you can see now that i can click you can only click one they're all in the same group which is my tabs right here the name all right and now the html is done like we are done with html it looks horrible but
+        you can fix that with css now this is when the magic happens so let's go ahead i'm going to open my css all right let's start with the body let's just like the background color um gray and the fun family for everything is going to be roboto roboto
+        roboto there you go there you go now we have a background and the font looks a little bit better that's what i want all right so now let's do for the container which is my taps and here's the trick i'm going to use display flex okay just play
+        flex and to make sure that they are um in order and they respect the sizes and we can stack them how we want to i'm going to use flex wrap wrap all right all right let's do max width i don't know 800 pixels even maybe less 600 let's do some margin
+        um top bottoms um 50 pixels um automatic left and right and some padding let me save that and see how it looks all right a little bit better now we have you know the container is 600 pixels we have some padding we have some margin tap top and
+        bottom so it looks better next thing i want to do is i want to hide the this radio circle thing right we don't want it there so i'm going to do my taps input and this is going to be type equals to what to radio yep um and we're just gonna do this
+        play none there you go now we have only the label but now you cannot when you click you can't see what are you clicking on because we don't have it now but we're gonna fix that all right let's style the label now my taps label let's do padding
+        25 pixels remember you can do whatever you want here i'm just um adding some style um the background this is like a gray let me save let's see how it looks there we go all right um font weight i'm gonna be it's gonna be bold i think we're good
+        all right let's say that i think we're good for now all right now for the tab which is all this content let's go ahead and do something for that let's do with i want it to be 100 to take the whole thing um let's see some padding we can add some
+        padding yep let's change the background color to a pure white save that here you go all right so now you have an idea what's going on right um because we're using flexbox this is all stack in a specific order and that's it but how do we want the
+        like how is possible how we can put all the tabs in here that's that's the magic of flexbox you can put a specific order to the elements so that's what we're gonna do so let's go ahead and what i'm gonna do is change the order of the tab this
+        to one and all we have to do is this order one by default is zero okay so everything is zero right now if i put one that's gonna be after everything that is zero okay so tab is gonna be one i'm gonna save that to pay attention there you go so
+        now all the tabs are after the label now the label is in zero so if i do this order two take a look at that we don't want this maybe you want this i don't know maybe maybe you do um this is how we actually change order in flexbox if i put zero
+        it's gonna go back to here but we don't need to if it's zero you can just leave it like that and now it's looking a lot better looking like taps so now all we have to do is hide it and make sure it shows only when you click the specific label
+        so let's go ahead and do that let's go ahead and change a little bit the um the title i wanted a little bit the font size of that title i think it can be um like 3em let me see yeah that's better it doesn't have to be that size but i like it alright
+        and now this is the magic my taps we're gonna go ahead and put the input type equals radio and now take a look at this if it's checked which is what we saw um like two minutes uh into the video which you can actually see here this one is checked
+        so the first one is checked if it's checked i'm going to do plus i'm going to explain what plus is and then plus again tab display block all right i'm gonna save nothing is going to happen because right now what i'm saying is when you check for
+        example if i click this free label it's going to become checked it's going to look for the next element that is a label so if you go to the html and this is checked it's gonna look for the next element it it needs to be the next okay that's the
+        plus sign it needs to be so if it's not a label it's not gonna work so right now i say okay the next element that is a label and then the next element that is a tab do this that's what i'm saying here with the plus okay if the next element is
+        not a label it's not gonna work that is that simple okay very very specific all right now that every time i click on a label the tab is displaying displaying block what i can do is here display none now it disappears because it's displaying none
+        but if i click on let's say silver it's gonna trigger this css right here and it's gonna check the labeling tab and then okay display block so let's see if that works there you go there you go all right it's working um i need to make sure that
+        we know what we're clicking so let's go ahead here and say my tabs same thing input type equals to radio checked plus a label and let's change the background to white all right there you go so now the free is checked because we have it here on
+        the html and now if i click the silver there you go gold there you go ladies and gentlemen we have tabs working without javascript and you can see um the flex flexbox and the um magic doing something very cool and there's a lot of other things
+        that we can do with only html css that you cannot imagine that you can do without javascript so i'm going to do more videos like this and subscribe if you like them let me know if you don't like them but hope you learned something new alright
+        that's it
+    </p>
+</body>
+
+</html>
